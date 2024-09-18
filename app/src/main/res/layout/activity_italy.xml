@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItalyActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="126dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/flag_of_italy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Италия"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Рим"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="364dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="36dp"
+        android:text="Рим (лат. и итал. Roma) — столица и крупнейший город Италии (по населению агломерации уступает Милану и Неаполю). Административный центр области Лацио и одноимённой территориальной единицы Рим, приравненной к провинции. Расположен на реке Тибр. Часть территории Рима относится к государству Ватикан. Основанный в 753 г. до н. э. Рим — один из старейших городов Европы, столица древней цивилизации. Ещё в античности (III век н. э.) Рим называли «Вечным городом» (лат. Roma Aeterna, Urbs Aeterna). Одним из первых так назвал Рим римский поэт Альбий Тибулл (I век до н. э.) в своей второй элегии. Представления о «вечности» Рима во многом сохранились и после падения древнеримской цивилизации, принеся соответствующий эпитет в современные языки. Также Рим называют «городом на семи холмах». Первоначально поселения располагались на холме Палатин, впоследствии были заселены соседние холмы — Капитолий и Квиринал. Несколько позже поселения появились на последних четырёх холмах (Целии, Авентине, Эсквилине и Виминале)."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.248" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

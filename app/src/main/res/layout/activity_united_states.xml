@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnitedStatesActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="126dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/flag_of_the_united_states_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+
+        android:text="Соедененные Штаты Америки."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Вашингтон."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="357dp"
+        android:layout_height="519dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="36dp"
+        android:text="Вашингто́н (также Ва́шингтон; англ. Washington, D.C.) — город, столица Соединённых Штатов Америки. Официальное название — округ Колумбия (англ. District of Columbia, сокращённо D.C., «Ди-Си»). Чтобы не путать город с одноимённым штатом на северо-западе страны, американцы в разговорной речи обычно называют город «Ди-Си» или «Вашингтон, Ди-Си». Федеральный округ Колумбия является самостоятельной территорией, не входящей ни в один из штатов. Он был образован в 1790 году Актом о местопребывании[англ.] и включал город Джорджтаун, а также город Александрию (до 1846 года). Город Вашингтон был основан в 1791 году и назван в честь Джорджа Вашингтона, первого американского президента. В 1871 году города Вашингтон и Джорджтаун и округ Вашингтон были формально упразднены как самостоятельные административные единицы и объединены с округом Колумбия. Город расположен на восточном берегу реки Потомак, которая является границей со штатом Виргиния на юго-западе. На севере и востоке округ Колумбия граничит со штатом Мэриленд. Постоянное население города составляет свыше 600 тысяч человек; из-за приезда жителей пригородной зоны во время рабочей недели оно увеличивается до одного миллиона. Население Вашингтонской агломерации, частью которой является город, составляет 5,4 миллиона человек; по этому показателю агломерация занимает восьмое место в стране."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.401" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

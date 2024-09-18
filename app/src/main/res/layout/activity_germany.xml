@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GermanyActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="126dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/flag_of_germany"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Германия"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Берлин"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="372dp"
+        android:layout_height="341dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="36dp"
+        android:text="Берли́н (нем. Berlin) — столица и крупнейший город Германии, первый по населению и второй по площади город Евросоюза. Является одной из 16 земель в составе ФРГ и целиком располагается внутри федеральной земли Бранденбург. Город расположен на берегах рек: Шпре (в связи с чем его называют «Афинами на Шпре»), Хафель в центре федеральной земли Бранденбург (частью последней Берлин не является с 1920 года). Около 1200 года на месте современного Берлина располагались два торговых поселения — Кёлльн и Берлин. Точная дата получения ими городских прав неизвестна. Городские права Кёлльна впервые упоминаются в 1237 году, городские права Берлина — в 1244 году. В 1307 году города объединились и образовали общую городскую управу. В 1400 году население объединённого Берлина составляло 8000 человек. Историческое название «Кёлльн» нашло своё отражение в названии берлинского района Нойкёльн."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.266" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

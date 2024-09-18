@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JapanActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="126dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/flag_of_japan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Япония."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Токио."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="372dp"
+        android:layout_height="442dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="36dp"
+        android:text="То́кио (яп. 東京 То:кё:«Восточная столица») — столица и крупнейший город Японии, её административный, финансовый, промышленный и политический центр. Крупнейшая городская экономика мира. Помимо столицы, Токио также является одной из сорока семи префектур страны. Площадь префектуры составляет 2188,67 км², население — 14 064 696 человек (1 октября 2020), плотность населения — 6426,14 чел./км². По состоянию на 1 августа 2021 года население Токио составляло 14 043 239 человек, что делает Токио префектурой с самым большим населением в Японии. Большой Токио является городской территорией, городской агломерацией и метрополитенским ареалом с самым большим населением в мире, с населением по состоянию на 2016 год в 38 140 000 человек, является частью мегалополиса Пояс Тайхэйё. Токио, являясь самой большой по населению городской агломерацией на Земле, считается самым безопасным городом в мире. Токио известен как город, который в ночь с 9 на 10 марта 1945 года во время рейда Вооружённых сил США, под кодовым названием «Операция Дом собраний», подвергся самой разрушительной и смертоносной неядерной бомбардировке в истории человечества."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.325" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
